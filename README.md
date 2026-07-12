@@ -114,10 +114,10 @@ The model is compiled with:
 - Loss: `sparse_categorical_crossentropy`
 - Metric: Accuracy
 
-Then it is trained for 5 epochs using:
+Then it is trained for 10 epochs using:
 
 ```python
-history = model.fit(train_ds, epochs=5)
+history = model.fit(train_ds, epochs=10)
 ```
 
 ### 6. Saving the Model
@@ -239,66 +239,7 @@ python predict.py
 ```text
 Predicted Class: 0
 Confidence: 0.97
-```
 
----
-
-## Push the Project to GitHub
-
-Follow these steps to upload this project to your GitHub profile.
-
-### 1. Initialize Git in the project folder
-
-```bash
-git init
-```
-
-### 2. Add the files to the repository
-
-```bash
-git add .
-```
-
-### 3. Commit the files
-
-```bash
-git commit -m "Initial commit"
-```
-
-### 4. Create a new repository on GitHub
-
-Go to GitHub and create a new repository.
-
-- Repository name: for example, `image-classifier`
-- Keep it public or private as desired
-- Do not initialize it with a README if you already have one
-
-### 5. Connect your local repo to GitHub
-
-```bash
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/image-classifier.git
-```
-
-### 6. Push the code to GitHub
-
-```bash
-git push -u origin main
-```
-
-### 7. Update later
-
-After changes, use:
-
-```bash
-git add .
-git commit -m "Update model and README"
-git push
-```
-
-> If you already created a GitHub repo and want to link it, replace the remote URL with your repository URL.
-
----
 
 ## Notes
 
