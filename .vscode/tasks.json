@@ -1,0 +1,97 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Resize dataset images",
+			"type": "shell",
+			"command": "c:/image-classifier/.venv/Scripts/python.exe",
+			"args": [
+				"resize_dataset.py"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Resize dataset images",
+			"type": "shell",
+			"command": "c:/image-classifier/.venv/Scripts/python.exe",
+			"args": [
+				"resize_dataset.py"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Train image classifier",
+			"type": "shell",
+			"command": "c:/image-classifier/.venv/Scripts/python.exe",
+			"args": [
+				"train.py"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Train image classifier",
+			"type": "shell",
+			"command": "c:/image-classifier/.venv/Scripts/python.exe",
+			"args": [
+				"train.py"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Train image classifier",
+			"type": "shell",
+			"command": "c:/image-classifier/.venv/Scripts/python.exe",
+			"args": [
+				"train.py"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install TensorFlow in workspace venv",
+			"type": "shell",
+			"command": "c:/image-classifier/.venv/Scripts/python.exe",
+			"args": [
+				"-m",
+				"pip",
+				"install",
+				"tensorflow==2.16.2",
+				"--no-cache-dir"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Inspect Python versions",
+			"type": "shell",
+			"command": "py",
+			"args": [
+				"-0p"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check for older Python runtimes",
+			"type": "shell",
+			"command": "cmd /c \"py -3.10 -V 2>NUL & py -3.11 -V 2>NUL & py -3.12 -V 2>NUL & py -3.13 -V 2>NUL\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Check Python 3.11 availability",
+			"type": "shell",
+			"command": "py",
+			"args": [
+				"-3.11",
+				"-V"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
