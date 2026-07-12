@@ -145,19 +145,6 @@ The prediction workflow is implemented in `predict.py`.
 7. Pass the image through the model.
 8. Take the class with the highest probability as the predicted class.
 
-### Model Flow Diagram
-
-```mermaid
-flowchart LR
-    A[Input Image] --> B[Resize to 224x224]
-    B --> C[Normalize Pixels]
-    C --> D[MobileNetV2 Base Model]
-    D --> E[GlobalAveragePooling2D]
-    E --> F[Dense(128, ReLU)]
-    F --> G[Dense(num_classes, Softmax)]
-    G --> H[Predicted Class + Confidence]
-```
-
 ### Layer Summary
 
 - Input layer: 224x224x3 image
