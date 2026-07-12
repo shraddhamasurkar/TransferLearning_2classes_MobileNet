@@ -241,6 +241,24 @@ Predicted Class: 0
 Confidence: 0.97
 ```
 
+## Training Logs and Outputs
+
+A sample training log file is included in this repository as [trainingLogs.txt](trainingLogs.txt).
+
+You can also save future logs by running:
+
+```bash
+python train.py > training_logs.txt 2>&1
+```
+
+To save a prediction result for a sample image, you can write it to a text file:
+
+```python
+with open("prediction_output.txt", "w") as f:
+    f.write(f"Predicted Class: {class_index}\n")
+    f.write(f"Confidence: {confidence:.2f}\n")
+```
+
 ---
 
 ## Push the Project to GitHub
