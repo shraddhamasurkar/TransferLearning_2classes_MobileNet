@@ -114,10 +114,10 @@ The model is compiled with:
 - Loss: `sparse_categorical_crossentropy`
 - Metric: Accuracy
 
-Then it is trained for 5 epochs using:
+Then it is trained for 8 epochs using:
 
 ```python
-history = model.fit(train_ds, epochs=5)
+history = model.fit(train_ds, epochs=8)
 ```
 
 ### 6. Saving the Model
