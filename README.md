@@ -149,13 +149,13 @@ The prediction workflow is implemented in `predict.py`.
 
 ```mermaid
 flowchart LR
-    A[Input Image] --> B[Resize to 224x224]
-    B --> C[Normalize Pixels]
-    C --> D[MobileNetV2 Base Model]
-    D --> E[GlobalAveragePooling2D]
-    E --> F[Dense(128, ReLU)]
-    F --> G[Dense(num_classes, Softmax)]
-    G --> H[Predicted Class + Confidence]
+    A[Input] --> B[Resize]
+    B --> C[Normalize]
+    C --> D[MobileNet]
+    D --> E[Pool]
+    E --> F[Dense]
+    F --> G[Output]
+    G --> H[Prediction]
 ```
 
 ### Layer Summary
